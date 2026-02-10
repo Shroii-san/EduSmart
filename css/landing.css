@@ -47,6 +47,7 @@
 /* ===================== */
 @media (max-width: 768px) {
   .landing {
+    padding-top: 140px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -65,9 +66,9 @@
   .landing-shape {
     width: 300px;
     height: 300px;
-    top: -120px;
-    right: -120px;
-    opacity: 0.9;
+    top: -100px;
+    right: -100px;
+    opacity: 0.85;
   }
 
   .landing-shape img {

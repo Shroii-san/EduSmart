@@ -1,43 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dashboard.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <title>Document</title>
 </head>
+
 <body>
 
-<header class="navbar">
-  <div class="container">
-    <strong>E-Learning</strong>
-    <nav>
+  <header class="navbar">
+    <div class="nav-left">E-Learning</div>
+
+    <!-- Desktop Nav -->
+    <nav class="nav-desktop">
       <a href="dashboard.html">Beranda</a>
       <a href="tasks.html">Tugas</a>
       <a href="chat.html">Chat</a>
     </nav>
-  </div>
-</header>
 
-<section class="container">
-  <div class="profile-card">
-    <div class="avatar"></div>
-    <div>
-      <h3>Rizal Wira Fadhilah</h3>
-      <p>X PPLG 2</p>
+    <!-- Hamburger (mobile only) -->
+    <button class="hamburger" onclick="toggleSidebar()">
+      ☰
+    </button>
+  </header>
+
+  <!-- Sidebar Mobile -->
+  <div class="sidebar" id="sidebar">
+
+    <!-- Header Sidebar -->
+    <div class="sidebar-header">
+      <div class="sidebar-avatar">RW</div>
+      <div class="sidebar-user">
+        <strong>Rizal Wira</strong>
+        <small>X PPLG 2</small>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <nav class="sidebar-menu">
+      <a href="dashboard.html" class="active">
+        <span class="icon">🏠</span>
+        <span>Beranda</span>
+      </a>
+      <a href="tasks.html">
+        <span class="icon">📄</span>
+        <span>Tugas</span>
+      </a>
+      <a href="chat.html">
+        <span class="icon">💬</span>
+        <span>Chat</span>
+      </a>
+    </nav>
+
+    <!-- Footer -->
+    <div class="sidebar-footer">
+      <a href="#">Keluar</a>
     </div>
   </div>
 
-  <div class="menu-grid">
-    <div class="menu-card" onclick="go('tasks.html')">📄 Tugas</div>
-    <div class="menu-card">📚 Materi</div>
-    <div class="menu-card" onclick="go('chat.html')">💬 Chat</div>
-    <div class="menu-card">📢 Pengumuman</div>
-  </div>
-</section>
 
-<script src="js/main.js"></script>
+  <section class="container">
+    <div class="profile-card">
+      <div class="avatar"></div>
+      <div>
+        <h3>Rizal Wira Fadhilah</h3>
+        <p>X PPLG 2</p>
+      </div>
+      <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-card" onclick="go('tasks.html')">📄 Tugas</div>
+      <div class="menu-card">📚 Materi</div>
+      <div class="menu-card" onclick="go('chat.html')">💬 Chat</div>
+      <div class="menu-card">📢 Pengumuman</div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>

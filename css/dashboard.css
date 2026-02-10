@@ -29,3 +29,149 @@
   text-align: center;
   cursor: pointer;
 }
+
+/* ===== NAVBAR BASE ===== */
+.navbar {
+  height: 64px;
+  padding: 0 24px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-desktop {
+  display: flex;
+  gap: 24px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  cursor: pointer;
+}
+
+/* ===== SIDEBAR UPGRADE ===== */
+/* SIDEBAR */
+.sidebar {
+  padding: 28px 22px;
+  gap: 0;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  z-index: 200;
+  transition: .3s ease;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+/* OVERLAY */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  z-index: 150;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s ease;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #22c1dc;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-user small {
+  color: #777;
+  font-size: 13px;
+}
+
+/* Menu */
+.sidebar-menu {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: #222;
+  transition: .25s ease;
+}
+
+.sidebar-menu a:hover {
+  background: rgba(34, 193, 220, .12);
+}
+
+.sidebar-menu a.active {
+  background: #22c1dc;
+  color: white;
+}
+
+.sidebar-menu .icon {
+  width: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Footer */
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.sidebar-footer a {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.sidebar-menu a:active {
+  transform: scale(.97);
+}
+
+/* ===== MOBILE BEHAVIOR ===== */
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
