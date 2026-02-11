@@ -1,0 +1,236 @@
+/* ================= GLOBAL ================= */
+* {
+  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* ================= PAGE ================= */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  width: 100%;
+  max-width: 450px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.hero-text button {
+  background: #4cc3df;
+  border: none;
+  padding: 12px 35px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.hero-image {
+  flex: 1;
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 280px;
+  height: 280px;
+  background: #4cc3df;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+}
+
+/* ================= AUTH ================= */
+.auth {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.auth-left,
+.auth-right {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+.auth-left {
+  background: #4cc3df;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-left button {
+  margin-top: 20px;
+  background: white;
+  color: #4cc3df;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.auth-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-right input {
+  margin: 10px 0;
+  padding: 12px;
+  background: #eee;
+  border: none;
+  border-radius: 6px;
+}
+
+.auth-right button {
+  margin-top: 20px;
+  background: #4cc3df;
+  border: none;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ================= CARD & TUGAS ================= */
+.card {
+  background: #00b6d6;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.tugas-item {
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.done {
+  opacity: 0.6;
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 15px 60px;
+  }
+
+  .navbar ul {
+    margin: 0;
+  }
+
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    padding: 60px;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .circle {
+    width: 350px;
+    height: 350px;
+    font-size: 36px;
+  }
+
+  .auth {
+    flex-direction: row;
+  }
+
+  .auth-left,
+  .auth-right {
+    padding: 80px;
+  }
+
+  .tugas-item {
+    grid-template-columns: 1fr 1fr 1fr auto;
+    align-items: center;
+  }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1200px) {
+  .hero-text h1 {
+    font-size: 56px;
+  }
+
+  .circle {
+    width: 420px;
+    height: 420px;
+    font-size: 40px;
+  }
+}
