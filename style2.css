@@ -1,0 +1,47 @@
+/* BACK */
+.back {
+  margin-bottom: 10px;
+  color: #00bcd4;
+  cursor: pointer;
+}
+
+/* TUGAS */
+.task {
+  background: #00bcd4;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 40px;
+  gap: 5px;
+  cursor: pointer;
+}
+.task span {
+  background: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* DETAIL */
+.detail-header {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px 5px 0 0;
+}
+.detail-box {
+  border: 2px solid #00bcd4;
+  height: 200px;
+}
+.detail-footer {
+  margin-top: 10px;
+  background: #4fc3dc;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
