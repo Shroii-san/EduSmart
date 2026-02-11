@@ -3,38 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="css/style2.css" />
     <title>Document</title>
   </head>
   <body>
-    <section id="tugas" class="page active">
-      <div class="hero">
-        <div class="hero-text">
-          <h2>Daftar Tugas</h2>
-          <div class="card">
-            <div class="tugas-item">
-              <div><b>Mata Pelajaran</b></div>
-              <div><b>Nama Guru</b></div>
-              <div><b>Tanggal</b></div>
-              <div><b>Aksi</b></div>
-            </div>
+    <div class="back" data-page="dashboard.html">← Kembali</div>
+    <h2>Daftar Tugas</h2>
 
-            <div class="tugas-item">
-              <div>Matematika</div>
-              <div>Bu Emma</div>
-              <div>6 Mei 2025</div>
-              <button onclick="selesai(this)">Lihat</button>
-            </div>
+    <div class="task" data-page="task-detail.html">
+      <span>IPAS</span>
+      <span>Bu Windi</span>
+      <span>28 April 2025</span>
+      <span>✔</span>
+    </div>
 
-            <div class="tugas-item">
-              <div>IPAS</div>
-              <div>Bu Windi</div>
-              <div>28 April 2025</div>
-              <button onclick="showPage('lihatTugas')">Lihat</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="task">
+      <span>Informatika</span>
+      <span>Bu Priyani</span>
+      <span>2 Mei 2025</span>
+      <span>✔</span>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

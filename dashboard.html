@@ -60,25 +60,48 @@
       <a href="#">Keluar</a>
     </div>
   </div>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+</div>
 
 
-  <section class="container">
-    <div class="profile-card">
-      <div class="avatar"></div>
-      <div>
-        <h3>Rizal Wira Fadhilah</h3>
-        <p>X PPLG 2</p>
-      </div>
-      <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="profile-card">
+    <div class="avatar"></div>
+    <div>
+        <b>Rizal Wira Fadhilah</b><br>
+        <small>X PPLG 2</small>
     </div>
+</div>
 
+<div class="section">
+    <h4>Akademik</h4>
     <div class="menu-grid">
-      <div class="menu-card" onclick="go('tasks.html')">📄 Tugas</div>
-      <div class="menu-card">📚 Materi</div>
-      <div class="menu-card" onclick="go('chat.html')">💬 Chat</div>
-      <div class="menu-card">📢 Pengumuman</div>
+        <div class="menu-item" data-page="tasks.html">
+            <div class="badge">3</div>
+            📄<br><span>Tugas</span>
+        </div>
+        <div class="menu-item" onclick="showMateri()">
+            📘<br><span>Materi</span>
+        </div>
     </div>
-  </section>
+</div>
+
+<div class="section">
+    <h4>Hubungi</h4>
+    <div class="menu-grid">
+        <div class="menu-item" data-page="chat.html">
+            💬<br><span>Chat</span>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h4>Berita</h4>
+    <div class="menu-grid">
+        <div class="menu-item" onclick="showBerita()">
+            📢<br><span>Pemberitahuan</span>
+        </div>
+    </div>
+</div>
 
   <script src="js/main.js"></script>
 
