@@ -1,34 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/auth.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/auth.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="auth">
+      <div class="auth-box">
+        <h2>Selamat Datang</h2>
+        <p>Buat Akun</p>
 
-<div class="auth">
-  <div class="auth-box">
-    <h2>Selamat Datang</h2>
-    <p>Buat Akun</p>
+        <input type="text" placeholder="Username / NIP / NIS" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Konfirmasi Password" />
 
-    <input type="text" placeholder="Username / NIP / NIS">
-    <input type="password" placeholder="Password">
-    <input type="password" placeholder="Konfirmasi Password">
+        <button class="btn" data-page="login.html">Masuk</button>
+        <br /><br />
+        <a href="register.html">Sudah punya akun?</a>
+      </div>
 
-    <button class="btn" onclick="go('dashboard.html')">Masuk</button>
-    <br><br>
-    <a href="register.html">Sudah punya akun?</a>
-  </div>
+      <div class="auth-side">
+        <h1>Belajar lebih teratur</h1>
+      </div>
+    </div>
 
-  <div class="auth-side">
-    <h1>Belajar lebih teratur</h1>
-  </div>
-</div>
-
-<script src="js/main.js"></script>
-
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
