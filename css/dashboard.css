@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   color: #fff;
-  margin-bottom: 20px;
+  margin: 20px 20px;
 }
 .avatar {
   width: 55px;
@@ -18,7 +18,7 @@
 
 /* SECTION */
 .section {
-  margin-bottom: 20px;
+  margin: 20px 20px;
 }
 .section h4 {
   color: #555;
@@ -55,15 +55,17 @@
 
 /* ===== NAVBAR BASE ===== */
 .navbar {
-  height: 64px;
+  height: 54px;
   padding: 0 24px;
-  background: #fff;
+  background: #4fc3dc;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 100;
+  color: white;
 }
 
 .nav-desktop {
@@ -76,6 +78,9 @@
   font-size: 26px;
   background: none;
   cursor: pointer;
+  border: none;
+  color: white;
+  border: white;
 }
 
 /* ===== SIDEBAR UPGRADE ===== */
